@@ -24,7 +24,7 @@ class CSEDisplayThread extends Thread{
 		}
 	}
 }
-class Main{
+class Threads{
 	public static void main(String[] args){
 		Thread bmsThread = new BMSDisplayThread();
 		Thread cseThread = new CSEDisplayThread();
