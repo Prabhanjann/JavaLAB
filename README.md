@@ -1,1 +1,1 @@
-This repository is created to handle the Java Lab Assignments  
+This repository is to handle the Java Lab Assignments  
