@@ -142,7 +142,6 @@ public class Bank {
                 case 2:
                     System.out.print("Enter withdrawal amount: ");
                     double withdrawalAmount = scanner.nextDouble();
-                    // account.withdraw(withdrawalAmount);
                     break;
                 case 3:
                     System.out.println("Current Balance: " + account.getBalance());
@@ -164,7 +163,5 @@ public class Bank {
                     System.out.println("Invalid option. Please try again.");
             }
         }
-
-        scanner.close(); // Close the scanner to prevent resource leakage
     }
 }
