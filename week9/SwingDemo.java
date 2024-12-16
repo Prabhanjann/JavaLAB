@@ -3,26 +3,19 @@ import java.awt.*;
 import java.awt.event.*;
 class SwingDemo{
  SwingDemo(){
- // create jframe container
  JFrame jfrm = new JFrame("Divider App");
  jfrm.setSize(275, 150);
  jfrm.setLayout(new FlowLayout());
- // to terminate on close
  jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
- // text label
  JLabel jlab = new JLabel("Enter the divider and divident:");
- // add text field for both numbers
  JTextField ajtf = new JTextField(8);
  JTextField bjtf = new JTextField(8);
- // calc button
  JButton button = new JButton("Calculate");
- // labels
  JLabel err = new JLabel();
  JLabel alab = new JLabel();
  JLabel blab = new JLabel();
  JLabel anslab = new JLabel();
- // add in order :)
- jfrm.add(err); // to display error bois
+ jfrm.add(err); 
  jfrm.add(jlab);
  jfrm.add(ajtf);
  jfrm.add(bjtf);
@@ -63,11 +56,9 @@ class SwingDemo{
  }
  }
  });
- // display frame
  jfrm.setVisible(true);
  }
  public static void main(String args[]){
- // create frame on event dispatching thread
  SwingUtilities.invokeLater(new Runnable(){
  public void run(){
  new SwingDemo();
