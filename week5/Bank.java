@@ -107,7 +107,7 @@ public class Bank {
         System.out.println("*********************************************\nName: B Prabhanjan\nUSN: 1BM23CS060\n*********************************************");
         System.out.println("Choose account type: 1 for Savings, 2 for Current");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        scanner.nextLine();
         System.out.print("Enter customer name: ");
         String name = scanner.nextLine();
         System.out.print("Enter account number: ");
